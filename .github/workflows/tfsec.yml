@@ -16,7 +16,7 @@ on:
 jobs:
   tfsec:
     name: Run tfsec sarif report
-    runs-on: latest_amazon_linux
+    runs-on: ubuntu-latest
     permissions:
       actions: read
       contents: read
