@@ -30,3 +30,18 @@ jobs:
         uses: aquasecurity/tfsec-sarif-action@9a83b5c3524f825c020e356335855741fd02745f
         with:
           sarif_file: tfsec.sarif
+       
+      - name: Setup TFLint
+        uses: terraform-linters/setup-tflint@v2       
+        with:
+           tflint_version: v0.38.1
+           
+      - name: Show version
+        run: tflint --version
+
+      - name: Init TFLint
+        run: tflint --init
+
+      - name: Run TFLint
+        run: tflint -f compact
+    
