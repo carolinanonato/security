@@ -1,4 +1,4 @@
-
+#smol change
 resource "aws_route_table" "route_table" {
   vpc_id = aws_vpc.aws_vpc_name.id
 
