@@ -1,5 +1,5 @@
 =======
-#smol change 
+#smolest change 
 
 resource "aws_vpc" "aws_vpc_name" {
   cidr_block           = var.cidr_block
